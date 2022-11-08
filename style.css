@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&display=swap');
 
-/* 
+/* font-family: 'Akaya Telivigala', cursive;
 font-family: 'Henny Penny', cursive;
+font-family: 'Island Moments', cursive;
 font-family: 'Kolker Brush', cursive;
 font-family: 'Merienda One', cursive;
 font-family: 'Monoton', cursive;
@@ -14,83 +15,168 @@ font-family: 'Rubik Burned', cursive; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 body{
+  overflow-x: hidden;
+  max-width: 100vw;
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(320deg, red, yellow);
+  /* background: linear-gradient(320deg, red, yellow); */
+  /* background-image: url("bg.jpg");
+  background-position: center;
+  background-size: cover; */
+}
+.main-div{
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(zoro.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 header{
   width: 100%;
-  height: 100px;
-  margin: 0 auto;
-  background: rgb(231, 217, 231);
+  height: 125px;
+  /* margin: 0 aut  o; */
+  /* background: rgb(231, 217, 231); */
 }
 header .search{
   width: 100%;
   height: 100%;
-  background: yellow;
+  max-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
 }
 header .search img{
-  width: 100px;
-  height: 80px;
-  margin: 5px 10px;
+  width: 90px;
+  height: 100px;
+  margin: 5px 0 0 20px;
+  cursor: pointer;
 }
 header  .search .logo{
   display: flex;
   align-items: center;
   min-width: 350px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   /* margin-top: 2rem; */
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 header .search .logo span{
   width: 100px;
-  font-size: 3.5rem;
-  font-family: 'Merienda One', cursive;
+  font-size: 5.5rem;
+  font-weight: bolder;
+  /* font-family: 'Merienda One', cursive; */
   /* font-family: 'Henny Penny', cursive; */
-  margin-left:0.5rem;
-  color: rgb(2, 61, 98);
+  font-family: 'Island Moments', cursive;
+  /* margin-left:0.5rem; */
+  cursor: pointer;
+  color: rgba(116, 171, 222,0.8);
+  text-shadow: 3px 3px 5px rgb(236, 29, 10);
   /* background-color: red; */
 }
-
-header .search .input-search input{
-  height: 100%;
-  width: 80%;
-  border: none;
-  outline: none;
-  padding-left: 30px;
-  background-color: white;
-  font-size: 1.2rem;
-  color: black;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-header .menu{
-  width: 100%;
-  height: 50%;
-  background: blue;
-}
 header .side-menu{
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  max-height: 125px;
 }
 header .side-menu .input-search{
   width: 100%;
   height: 100%;
-  background: cyan;
-  border-radius: 20px;
-  overflow: hidden;
+  max-height: 62px;
+  /* background: cyan; */
+  /* border-radius: 20px; */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .side-menu .input-search .search-div{
+  width: 40%;
+  height: 100%;
+  /* padding-top: 5px; */
+  /* background-color: red; */
   display: flex;
   align-items: center;
 }
+header .side-menu .input-search input{
+  height: 60%;
+  width: 80%;
+  /* border: none; */
+  border-radius: 20px;
+  border: 1px solid rgb(106, 104, 104);
+  outline: none;
+  padding:0 30px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+header .side-menu .input-search #search-btn{
+  color: rgb(168, 192, 10);
+  background-color: rgba(107, 3, 98, 0.5);
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Akaya Telivigala', cursive;
+}
+header .side-menu .input-search #search-btn:hover{
+  font-size: 1.6rem;
+  background-color: rgba(170, 19, 157, 0.5);
+  color: rgb(142, 233, 77);
+}
+header .side-menu .input-search #clock{
+  margin-right: 20px;
+  color: white;
+}
+header .side-menu .input-search .menu-list{
+  /* color: red; */
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background: rgba(83, 162, 184, 0.1);
+  color: rgb(168, 192, 10);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Henny Penny', cursive;
+  cursor: pointer;
+}
+header .side-menu .input-search .menu-list:hover{
+  font-size: 1.1rem;
+  background: rgba(83, 162, 184, 0.3);
+  color:red
+}
 header .side-menu .menu{
+  /* margin-top: 2px; */
   width: 100%;
-  height: 85%;
+  height: 90%;
+  max-height: 62px;
+  /* background: blue; */
+  display: flex;
+  border-top: 1px solid rgba(212, 255, 0,0.3);
+  justify-content: space-between;
+  align-items: center;
+}
+header .side-menu .menu .search-tag{
+  background: rgba(9, 64, 93, 0.1);
+  color: rgb(209, 205, 205);
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+header .side-menu .menu .search-tag:hover{
+  background: rgba(9, 64, 93, 0.6);
+  color: rgb(220, 119, 119);
+  font-size: 1.1rem;
+}
+header .side-menu .menu #marvel{
+  margin-right: 30px;
 }
