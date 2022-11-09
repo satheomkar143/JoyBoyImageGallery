@@ -54,10 +54,10 @@ body {
 header {
   width: 100%;
   height: 125px;
-  position: fixed;
+  /* position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0; */
   /* margin: 0 aut  o; */
   /* background: rgb(231, 217, 231); */
 }
@@ -228,86 +228,6 @@ header .side-menu .menu #marvel {
 .hidden-div {
   height: 100vh;
   background: transparent;
-}
-.gallery {
-  background-color: aquamarine;
-  width: 100%;
-  min-height: 100vh;
-  columns: 4;
-  column-gap: 20px;
-  padding: 40px;
-}
-.gallery .gallery-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: red;
-}
-.img-popup-window {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80vh;
-  background-color: rgb(132, 194, 173);
-  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  transition: 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-popup-window.hidden{
-  display: none;
-  opacity: 0;
-}
-.close-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-.download-btn {
-  text-transform: capitalize;
-  padding: 10px 20px;
-  background: yellow;
-  color: blue;
-  text-decoration: none;
-  border-radius: 5px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-.large-img {
-  height: 80%;
-  width: auto;
-  max-width: 80%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.controls {
-  background: none;
-  border: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.pre-btn {
-  left: 20px;
-}
-.next-btn {
-  right: 20px;
 }
 
 .term-cond {
