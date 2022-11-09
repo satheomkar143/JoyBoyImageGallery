@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Xanh+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Xanh+Mono&display=swap");
 
 /* font-family: 'Akaya Telivigala', cursive;
 font-family: 'Henny Penny', cursive;
@@ -12,13 +12,13 @@ font-family: 'Xanh Mono', monospace;*/
 
 /* --------header-------- */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
 }
-body{
+body {
   overflow-x: hidden;
   max-width: 100vw;
   width: 100vw;
@@ -28,25 +28,30 @@ body{
   background-position: center;
   background-size: cover; */
 }
-.myname{
+.myname {
   position: fixed;
   top: 5px;
-  left:10rem;
+  left: 10rem;
   font-size: 1.1rem;
   letter-spacing: 2px;
   z-index: 10;
   /* font-family: 'Henny Penny', cursive; */
-  font-family: 'Rubik Burned', cursive;
+  font-family: "Rubik Burned", cursive;
   color: rgb(255, 225, 0);
 }
-.main-div{
+.main-div {
   position: absolute;
-  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(zoro.jpg);
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(zoro.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
 }
-header{
+header {
   width: 100%;
   height: 125px;
   position: fixed;
@@ -56,7 +61,7 @@ header{
   /* margin: 0 aut  o; */
   /* background: rgb(231, 217, 231); */
 }
-header .search{
+header .search {
   width: 100%;
   height: 100%;
   max-height: 100%;
@@ -65,18 +70,18 @@ header .search{
   /* justify-content: space-between; */
   align-items: center;
 }
-header .search img{
+header .search img {
   width: 90px;
   height: 100px;
   margin: 5px 0 0 20px;
   cursor: pointer;
   transition: all 0.7s ease;
 }
-header .search img:hover{
+header .search img:hover {
   height: 120px;
   width: 110px;
 }
-header  .search .logo{
+header .search .logo {
   display: flex;
   align-items: center;
   min-width: 350px;
@@ -84,20 +89,20 @@ header  .search .logo{
   /* margin-top: 2rem; */
   /* background-color: aqua; */
 }
-header .search .logo span{
+header .search .logo span {
   width: 100px;
   font-size: 5.5rem;
   font-weight: bolder;
   /* font-family: 'Merienda One', cursive; */
   /* font-family: 'Henny Penny', cursive; */
-  font-family: 'Island Moments', cursive;
+  font-family: "Island Moments", cursive;
   /* margin-left:0.5rem; */
   cursor: pointer;
   color: rgba(32, 208, 85, 0.8);
   text-shadow: 3px 3px 5px rgb(236, 10, 48);
   /* background-color: red; */
 }
-header .side-menu{
+header .side-menu {
   /* background-color: red; */
   display: flex;
   flex-direction: column;
@@ -105,7 +110,7 @@ header .side-menu{
   height: 100%;
   max-height: 125px;
 }
-header .side-menu .input-search{
+header .side-menu .input-search {
   width: 100%;
   height: 100%;
   max-height: 62px;
@@ -116,7 +121,7 @@ header .side-menu .input-search{
   align-items: center;
   justify-content: space-between;
 }
-header .side-menu .input-search .search-div{
+header .side-menu .input-search .search-div {
   width: 40%;
   height: 100%;
   /* padding-top: 5px; */
@@ -124,21 +129,21 @@ header .side-menu .input-search .search-div{
   display: flex;
   align-items: center;
 }
-header .side-menu .input-search input{
+header .side-menu .input-search input {
   height: 60%;
   width: 80%;
   /* border: none; */
   border-radius: 20px;
   border: 1px solid rgb(106, 104, 104);
   outline: none;
-  padding:0 30px;
+  padding: 0 30px;
   background-color: transparent;
   font-size: 1.2rem;
   color: white;
   letter-spacing: 1px;
   font-weight: 600;
 }
-header .side-menu .input-search #search-btn{
+header .side-menu .input-search #search-btn {
   color: rgb(168, 192, 10);
   background-color: rgba(107, 3, 98, 0.5);
   margin-left: 10px;
@@ -146,18 +151,18 @@ header .side-menu .input-search #search-btn{
   font-size: 1.5rem;
   border-radius: 7px;
   cursor: pointer;
-  font-family: 'Akaya Telivigala', cursive;
+  font-family: "Akaya Telivigala", cursive;
 }
-header .side-menu .input-search #search-btn:hover{
+header .side-menu .input-search #search-btn:hover {
   font-size: 1.6rem;
   background-color: rgba(170, 19, 157, 0.5);
   color: rgb(142, 233, 77);
 }
-header .side-menu .input-search #clock{
+header .side-menu .input-search #clock {
   margin-right: 20px;
   color: white;
 }
-header .side-menu .input-search .menu-list{
+header .side-menu .input-search .menu-list {
   /* color: red; */
   font-size: 1rem;
   letter-spacing: 1px;
@@ -166,43 +171,43 @@ header .side-menu .input-search .menu-list{
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
-  font-family: 'Henny Penny', cursive;
+  font-family: "Henny Penny", cursive;
   cursor: pointer;
 }
-header .side-menu .input-search .menu-list:hover{
+header .side-menu .input-search .menu-list:hover {
   font-size: 1.1rem;
   background: rgba(83, 162, 184, 0.3);
-  color:red
+  color: red;
 }
-header .side-menu .menu{
+header .side-menu .menu {
   /* margin-top: 2px; */
   width: 100%;
   height: 90%;
   max-height: 62px;
   /* background: blue; */
   display: flex;
-  border-top: 1px solid rgba(212, 255, 0,0.3);
+  border-top: 1px solid rgba(212, 255, 0, 0.3);
   justify-content: space-between;
   align-items: center;
 }
-header .side-menu .menu .search-tag{
+header .side-menu .menu .search-tag {
   background: rgba(9, 64, 93, 0.1);
   color: rgb(209, 205, 205);
   padding: 5px 10px;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-header .side-menu .menu .search-tag:hover{
+header .side-menu .menu .search-tag:hover {
   background: rgba(9, 64, 93, 0.6);
   color: rgb(220, 119, 119);
   font-size: 1.1rem;
 }
-header .side-menu .menu #marvel{
+header .side-menu .menu #marvel {
   margin-right: 30px;
 }
-.main-div .dialouge{
+.main-div .dialouge {
   /* background-color: aqua; */
   background: rgba(0, 0, 0, 0.4);
   text-align: justify;
@@ -210,20 +215,20 @@ header .side-menu .menu #marvel{
   margin: 40px;
   box-shadow: 3px 3px 5px rgb(142, 60, 60);
 }
-.main-div .dialouge div{
+.main-div .dialouge div {
   /* background: red; */
   margin-bottom: 1rem;
   color: rgba(62, 162, 44, 0.8);
   text-shadow: 3px 3px 5px red;
   padding: 10px;
   font-size: 1.85rem;
-  font-family: 'Xanh Mono', monospace;
+  font-family: "Xanh Mono", monospace;
 }
-.hidden-div{
+.hidden-div {
   height: 100vh;
   background: transparent;
 }
-.gallery{
+.gallery {
   background-color: aquamarine;
   width: 100%;
   min-height: 100vh;
@@ -231,7 +236,7 @@ header .side-menu .menu #marvel{
   column-gap: 20px;
   padding: 40px;
 }
-.gallery .gallery-img{
+.gallery .gallery-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -240,21 +245,71 @@ header .side-menu .menu #marvel{
   cursor: pointer;
   background-color: red;
 }
+.img-popup-window {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80vh;
+  background-color: rgb(132, 194, 173);
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-popup-window.hidden{
+  display: none;
+  opacity: 0;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.download-btn {
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background: yellow;
+  color: blue;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.large-img {
+  height: 80%;
+  width: auto;
+  max-width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.controls {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.pre-btn {
+  left: 20px;
+}
+.next-btn {
+  right: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.term-cond{
+.term-cond {
   background-color: black;
   height: 150px;
 }

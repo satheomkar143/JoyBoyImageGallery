@@ -3,8 +3,10 @@
 
 const access_key = "rNVwC0_oge_yeUsY4qrMIPsRztIj8yTVI-sezUu4LxM";
 const random_photo_URL = `https://api.unsplash.com/photos/random?client_id=${access_key}&count=50`;
+
 const gallery = document.querySelector(".gallery");
 let allImages;
+let currentImage=0;
 
 const getImages = () => {
   fetch(random_photo_URL)
@@ -26,6 +28,12 @@ const makeImages = (data) => {
     img.className = "gallery-img";
     div.appendChild(img);
     gallery.appendChild(div);
+
+    // popup image
+    img.addEventListener("click",()=>{
+      currentImage = index;
+      showPopup(item);
+    })
   });
 };
 
