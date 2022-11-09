@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Ubuntu&family=Xanh+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.main-div{
+  background-color: rgb(183, 233, 193);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-div{
+  width: 90%;
+  height: 80%;
+  /* background-color: red; */
+  background: linear-gradient(320deg, rgba(201, 100, 100,0.8), rgba(8, 81, 126,0.8));
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px rgb(49, 47, 47);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.about-div .about-img{
+  /* background-color: red; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.about-div .about-img .img-div{
+  width: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(23, 22, 22);
+}
+.about-div .about-img .img1{
+  margin-left: 50px;
+}
+.about-div .about-img .img2{
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.about-div .about-text{
+  width: 40%;
+  /* background-color: yellow; */
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.about-div .about-text *{
+  margin: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.about-div .about-text h1{
+  font-family: 'Xanh Mono', monospace; 
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(81, 66, 196, 0.8);
+}
+.about-div .about-text h2{
+  font-size: 2rem;
+  color: rgba(237, 209, 209, 0.8);
+}
+.about-div .about-text h3{
+  font-size: 1.4rem;
+  color: rgba(246, 224, 224,0.5);
+}
+.about-div .about-text p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
