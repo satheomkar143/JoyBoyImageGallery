@@ -37,4 +37,36 @@ const makeImages = (data) => {
   });
 };
 
+const showPopup =(item)=>{
+  let popup = document.querySelector(".img-popup-window");
+  const downloadBtn = document.querySelector(".download-btn");
+  const closeBtn = document.querySelector(".close-btn");
+  const image= document.querySelector(".large-img");
+
+  popup.classList.remove("hidden");
+  downloadBtn.href = item.links.html;
+  image.src = item.urls.regular;
+
+  closeBtn.addEventListener("click",()=>{
+    popup.classList.add("hidden");
+  })
+}
+
+const preBtn = document.querySelector(".pre-btn");
+const nextBtn = document.querySelector(".next-btn");
+
+preBtn.addEventListener("click",()=>{
+  if(currentImage>0){
+    currentImage--;
+    showPopup(allImages[currentImage]) ;
+  }
+})
+
+nextBtn.addEventListener("click",()=>{
+  if(currentImage<allImages.length-1){
+    currentImage++;
+    showPopup(allImages[currentImage]) ;
+  }
+})
+
 getImages()

@@ -146,6 +146,7 @@ header .side-menu .input-search input {
 header .side-menu .input-search #search-btn {
   color: rgb(168, 192, 10);
   background-color: rgba(107, 3, 98, 0.5);
+  border: none;
   margin-left: 10px;
   padding: 5px 10px;
   font-size: 1.5rem;
