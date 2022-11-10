@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   <link rel="stylesheet" href="index.css">
   <title>JoyBoy | About Us</title>
 </head>
@@ -23,5 +27,189 @@
       <div><img src="r1.png" alt="image" class="right-img"></div>
     </div>
   </div>
+  <!-- -----------------login page------------- -->
+  <div class="content ">
+    <div class="cls-btn">
+      <i class="fa-solid fa-rectangle-xmark"></i>
+    </div>
+    <h1>Login Here</h1>
+    <form name="loginForm" action="website.html" onsubmit="return submitForm()">
+      <div class="field">
+        <span class="fa fa-user"></span>
+        <input name="EmailId" type="text" placeholder="Enter Email Id"  onfocus="onFocusEmail()" onblur="onBlurEmail()" autofocus/>
+      </div>
+      <!-- ----------email error massage------- -->
+      <div id="email-error"></div>
+      <div class="field space">
+        <span class="fa fa-lock"></span>
+        <input
+          name="password"
+          type="password"
+          class="pass-key"
+          placeholder="Password"
+          onfocus="onFocusPassword()"
+          onblur="onBlurPassword()"
+        />
+      </div>
+      <!-- ---------password error massage------- -->
+      <div id="password-error"></div>
+      <div class="pass">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="field login">
+        <input id="loginBtn" type="submit" value="LOGIN" />
+      </div>
+    </form>
+    <div class="login-with">Or login with</div>
+    <div class="links">
+      <div class="facebook">
+        <i class="fab fa-facebook-f"><span>Facebook</span></i>
+      </div>
+      <div class="instagram">
+        <i class="fab fa-instagram"><span>Instagram</span></i>
+      </div>
+    </div>
+    <div class="signup">
+      Don't have account?
+      <a href="signup.html">Signup Now</a>
+    </div>
+  </div>
+
+  <!-- ---------------------signup page------------------ -->
+  <form style="display: none;" class="main-div-signup" action="signIn.html" target="_blank" name="signupForm" onsubmit="return submitSignUpForm()">
+    <table align="center" cellpadding="5"   cellspacing="5">
+      <!-- -------first name------ -->
+      <tr>
+        <td><span><i class="fa-solid fa-user-tie"></i></span> First Name</td>
+        <td><input type="text" name="FirstName" placeholder="Enter First Name" onblur="onBlurFirst()" onfocus="onFocusFirst()" autofocus></td>
+        <td class="check hidden" id="checkFirst"></td>
+        <!-- <i class="fa-solid fa-circle-check"></i> -->
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorFirst"></td>
+      </tr>
+      <!-- ---------last name---------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-user-tie"></i></span> Last Name</td>
+        <td><input type="text" name="LastName" placeholder="Enter Last Name" onblur="onBlurLast()" onfocus="onFocusLast()"></td>
+        <td class="check hidden" id="checkLast"></td>
+        <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorLast"></td>
+      </tr>
+      <!-- ---------email---------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-envelope"></i></span> Email</td>
+        <td><input type="email" name="Email" placeholder="Enter Email Id" onblur="onBlurEmail()" onfocus="onFocusEmail()"></td>
+        <td class="check hidden" id="checkEmail"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorEmail"></td>
+      </tr>
+      <!-- ----------password--------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-lock"></i></span> Password</td>
+        <td><input type="password" name="Password" placeholder="Enter Password" onblur="onBlurPassword()"
+          onfocus="onFocusPassword()"></td>
+        <td class="check hidden" id="checkPassword"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorPassword"></td>
+      </tr>
+      <!-- ----------conform password----------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-rotate-right"></i></span> Conform password</td>
+        <td><input type="password" name="ConfPass" placeholder="Re-enter Password" onblur="onBlurConPassword()" onfocus="onFocusConPassword()"></td>
+        <td class="check hidden" id="checkConPassword"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorConPassword"></td>
+      </tr>
+      <!-- ----------mobile number--------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-mobile-retro"></i></span> Mobile Number</td>
+        <td><input type="text" name="Mobile" placeholder="Enter mobile Number" onblur="onBlurMobile()" onfocus="onFocusMobile()"></td>
+        <td class="check hidden" id="checkMobile"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorMobile"></td>
+      </tr>
+      <!-- ----------birth date------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-calendar-days"></i></span> Birth Date</td>
+        <td><input type="date" name="BirthDate" onblur="onBlurBirth()" onfocus="onFocusBirth()"></td>
+        <td class="check hidden" id="checkBirth"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorBirth"></td>
+      </tr>
+      <!-- ---------gender--------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-person-half-dress"></i></span> Gender</td>
+        <td>
+          <div class="div-gender">
+            <input type="radio" name="Gender" id="Male"><label for="Male"> Male</label>
+            <input type="radio" name="Gender" id="Female"><label for="Female"> Female</label>
+          </div>
+        </td>
+        <td class="check hidden" id="checkGender"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorGender"></td>
+      </tr>
+      <!-- -----------hobbies-------- -->
+      <tr>
+        <td><span><i class="fa-solid fa-heart-circle-plus"></i></span> Favorite anime's</td>
+        <td>
+          <div class="fav-anime">
+            <p>
+              <input type="checkbox" name="Anime" value="One Piece"> One Piece</input>
+            </p>
+            <p>
+              <input type="checkbox" name="Anime" value="naruto"> Naruto</input>
+            </p>
+            <p>
+              <input type="checkbox" name="Anime" value="Attack on titan">One Punch Man</input>
+            </p>
+            <p>
+              <input type="checkbox" name="Anime" value="Dragon ball"> Dragon Ball</input>
+            </p>
+            <p>
+              <input type="checkbox" name="Anime" value="Other"> Other</input>
+            </p>
+          </div>
+        </td>
+        <td class="check hidden" id="checkAnime"></td>
+      </tr>
+      <!-- -------for  error massage------- -->
+      <tr>
+        <td></td>
+        <td class="error" id="errorAnime"></td>
+      </tr>
+    </table>
+    <div class="term-cond">
+      By Creating an Account, You agree to our <a href="#">Terms and Conditions.</a>
+    </div>
+    <div class="submit-btn" >
+      <button type="submit" id="CreateAccBtn">Create Account</button>
+    </div>
+  </form>
 </body>
 </html>

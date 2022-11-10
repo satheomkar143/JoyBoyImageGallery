@@ -3,8 +3,8 @@
 
 let = searchParam = location.search.split("=").pop();
 const access_key = "rNVwC0_oge_yeUsY4qrMIPsRztIj8yTVI-sezUu4LxM";
-const random_photo_URL = `https://api.unsplash.com/photos/random?client_id=${access_key}&count=50`;
-const search_photo_URL = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParam}&per_page=50`;
+const random_photo_URL = `https://api.unsplash.com/photos/random?client_id=${access_key}&count=60`;
+let search_photo_URL = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParam}&per_page=60`;
 
 const gallery = document.querySelector(".gallery");
 
@@ -100,3 +100,21 @@ function start() {
   }, 1000);
 }
 start();
+
+
+//------------default search-----------
+// const Experimental = document.getElementById("Experimental");
+// Experimental.addEventListener("click", () => {
+//   input = document.getElementById("search-input2");
+//   alert("ok");
+//    input.value="car";
+//    //gallery.innerHTML="";
+//  // searchParam="food";
+//   // searchImages();
+//    console.log()
+//     // document.getElementById("main-form").submit();
+// });
+
+
+
+

@@ -1,5 +1,5 @@
 .gallery {
-  background-color: aquamarine;
+  background-color: rgb(18, 21, 20);
   width: 100%;
   min-height: 100vh;
   columns: 4;
@@ -13,7 +13,8 @@
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(26, 193, 212);
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.8);
 }
 .img-popup-window {
   position: fixed;

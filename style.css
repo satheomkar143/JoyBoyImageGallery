@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Xanh+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Ubuntu&family=Xanh+Mono&display=swap');
 
 /* font-family: 'Akaya Telivigala', cursive;
 font-family: 'Henny Penny', cursive;
@@ -18,6 +18,7 @@ font-family: 'Xanh Mono', monospace;*/
   box-sizing: border-box;
   user-select: none;
 }
+
 body {
   overflow-x: hidden;
   max-width: 100vw;
@@ -54,10 +55,10 @@ body {
 header {
   width: 100%;
   height: 125px;
-  /* position: fixed;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 0; */
+  top: 0;
   /* margin: 0 aut  o; */
   /* background: rgb(231, 217, 231); */
 }
@@ -168,17 +169,27 @@ header .side-menu .input-search .menu-list {
   font-size: 1rem;
   letter-spacing: 1px;
   background: rgba(83, 162, 184, 0.1);
-  color: rgb(168, 192, 10);
+  color: rgb(168, 192, 10) !important;
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
   font-family: "Henny Penny", cursive;
   cursor: pointer;
 }
+header .side-menu .input-search a{
+  color: rgb(168, 192, 10) ;
+  text-decoration: none;
+}
 header .side-menu .input-search .menu-list:hover {
   font-size: 1.1rem;
   background: rgba(83, 162, 184, 0.3);
+}
+header .side-menu .input-search .menu-list:hover a{
   color: red;
+}
+header .side-menu  form button{
+  border: none;
+  outline: none;
 }
 header .side-menu .menu {
   /* margin-top: 2px; */
@@ -213,8 +224,9 @@ header .side-menu .menu #marvel {
   background: rgba(0, 0, 0, 0.4);
   text-align: justify;
   width: 50%;
-  margin: 40px;
+  margin: 165px 40px 40px;
   box-shadow: 3px 3px 5px rgb(142, 60, 60);
+  border-radius: 15px;
 }
 .main-div .dialouge div {
   /* background: red; */
@@ -231,6 +243,47 @@ header .side-menu .menu #marvel {
 }
 
 .term-cond {
+  padding: 0 50px;
   background-color: black;
   height: 150px;
+  color: rgba(255, 255, 255, 0.775);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
 }
+.term-cond > *{
+  width: 30%;
+  /* background-color: red; */
+}
+.term-cond .div1 ul{
+  display: flex;
+  list-style-type: none;
+}
+.term-cond .div1 ul :nth-child(1){
+  margin-right: 30px;
+}
+.term-cond .div2{
+  text-align: center;
+}
+.term-cond .div2 > *{
+  margin: 10px;
+}
+.term-cond .div2 img{
+  width: 100px;
+  margin-top: -70px;
+}
+.term-cond .div3 ul{
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+.term-cond .div3 ul > *{
+  margin-right: 30px;
+}
+.term-cond a{
+  text-decoration: none;
+}
+
+
