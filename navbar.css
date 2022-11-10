@@ -27,3 +27,60 @@ body{
   align-items: center;
   border-radius: 10px;
 }
+.navigation ul{
+  display: flex;
+  width: 350px;
+  justify-content: space-around;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  min-width: 22%;
+  height: 70px;
+  z-index: 1;
+}
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--clr);
+}
+.navigation ul li:hover a .icon{
+  transform: translateY(-32px);
+}
+.navigation ul li a .text{
+  position: absolute;
+  color: var(--clr);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+}
+.navigation ul li:hover a .text{
+  opacity: 1;
+  transform: translateY(10px);
+}
+.indicator{
+  background-color: #29fd53;
+  position: absolute;
+  top: -50%;
+  height: 70px  ;
+  width: 70px;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+}
