@@ -17,11 +17,11 @@ const mobileRegex = "(^[6-9]{1,1})+([0-9]{9,9})$";
 //---------  add remove check box------
 function rightCheck(check) {
   check.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-  check.style.color = "rgb(32, 227, 32)";
+  check.style.color = "rgb(95, 99, 6)";
 }
 function crossCheck(check) {
   check.innerHTML = "<i class='fa-solid fa-circle-xmark'></i>";
-  check.style.color = "red";
+  check.style.color = "rgb(57, 4, 7)";
 }
 
 // ---------------onblur and onfocus for first name------------
@@ -207,7 +207,7 @@ function onFocusConPassword() {
   if (confPass.length === 0) {
     err.innerHTML = "please enter password again";
     crossCheck(check);
-    signupForm.ConfPass.focus();
+    //signupForm.ConfPass.focus();
   }
 }
 
@@ -230,7 +230,7 @@ function onBlurConPassword() {
     }
   } else {
     crossCheck(check);
-    signupForm.ConfPass.focus();
+   // signupForm.ConfPass.focus();
   }
 }
 
@@ -387,13 +387,7 @@ function submitSignUpForm() {
             if (onBlurMobile()) {
               if (onBlurBirth()) {
                 if (checkGender()) {
-                  if (favAnime()) {
-                      alert("Your Account is already. please sign in.🙂");
-                    return true;
-                  } else {
-                    favAnime();
-                    return false;
-                  }
+                  return true;
                 } else {
                   checkGender();
                   return false;

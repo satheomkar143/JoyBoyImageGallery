@@ -126,8 +126,8 @@ const signup_form = document.getElementById("signup-anchor");
 signup_form.addEventListener("click", () =>{
   const form = document.querySelector(".content");
   form.classList.add("hide-item");
-  const form2 = document.querySelector(".main-div-signup");
-  form2.classList.remove("hide-item");
+  // const form2 = document.querySelector(".main-div-signup");
+  // form2.classList.remove("hide-item");
 })
 
 //----------------show login form after click on CreateAccBtn---------------
