@@ -387,8 +387,12 @@ function submitSignUpForm() {
             if (onBlurMobile()) {
               if (onBlurBirth()) {
                 if (checkGender()) {
+                  const popupDiv = document.getElementById("CreateAccBtn");
+                  popupDiv.addEventListener("click", funPopup);
+                  console.log("form successfull")
                   return true;
                 } else {
+                  console.log("form unsucceeesful")
                   checkGender();
                   return false;
                 }
@@ -421,4 +425,27 @@ function submitSignUpForm() {
     return false;
   }
 }
+// -------for popup massage--------
+function funPopup(){
+  // alert("success");
+  const signUp_Form = document.querySelector(".main-div");
+  signUp_Form.classList.add("hide-item");
+
+  const welcomePopup = document.querySelector(".welcome");
+  welcomePopup.classList.remove("hide-item");
+}
+
+
+// --------------close welcome popup page after click on close button----------
+// const welcomeClsBtn = document.getElementById("welcomeClose");
+// welcomeClsBtn.addEventListener("click", () =>{
+//   const welcomePopup = document.querySelector(".welcome");
+//   welcomePopup.classList.add("hide-item");
+// })
+
+//-------------------submit form after click on popup button-------------
+const welcomeClsBtn = document.getElementById("welcomeClose");
+welcomeClsBtn.addEventListener("click", () =>{
+  document.querySelector(".main-div").submit();
+})
 

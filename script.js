@@ -148,10 +148,3 @@ marvel.addEventListener("click", () =>{
   input.value="marvel";
 })
 
-
-// --------------close welcome popup page after click on close button----------
-const welcomeClsBtn = document.getElementById("welcomeClose");
-welcomeClsBtn.addEventListener("click", () =>{
-  const welcomePopup = document.querySelector(".welcome");
-  welcomePopup.classList.add("hide-item");
-})
