@@ -31,7 +31,7 @@
                 <!-- <div class="menu-list" id="sign-in">sign in</div>
                 <div class="menu-list" id="sign-up">sign up</div> -->
                 <div class="menu-list" id="favorite"><a href="#">Favorite</a></div>
-                <div class="menu-list" id="about"><a href="about.html">About us</a></div>
+                <div class="menu-list" id="about"><a href="about.html" target="_parent">About us</a></div>
                 <div class="menu-list" id="contact"><a href="contact.html">contact us</a></div>
                 <div class="menu-list" id="logout"><a href="index.html">Log Out</a></div>
                 <div id="clock">wed 04:22:56</div>
@@ -69,11 +69,12 @@
 
     <!-- ------------popup window-------- -->
     <div class="img-popup-window hidden">
-      <button class="close-btn"></button>
-      <a href="#" class="download-btn">download image</a>
+      <button class="close-btn"><i class="fa-sharp fa-solid fa-circle-xmark"></i></button>
+      <button class="like-btn"><i class="fa-solid fa-heart"></i></button>
+      <a href="#" class="download-btn"><i class="fa-solid fa-circle-down"></i></a>
       <img src="zoro.jpg" alt="largeImg" class="large-img" />
-      <button class="controls pre-btn">pre</button>
-      <button class="controls next-btn">next</button>
+      <button class="controls pre-btn"><i class="fa-solid fa-backward"></i></button>
+      <button class="controls next-btn"><i class="fa-solid fa-forward"></i></button>
     </div>
 
     <!-- ----------gallery section--------- -->

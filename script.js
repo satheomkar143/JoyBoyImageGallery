@@ -90,7 +90,7 @@ if (searchParam == "") {
 
 // --------------create clock-----------
 const clock = document.getElementById('clock');
-const day= ['sun','mon','tue','wed','thu','fri','sat'];
+const day= ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 function start() {
   interval = setInterval(function () {
     var d = new Date();
@@ -102,19 +102,51 @@ function start() {
 start();
 
 
-//------------default search-----------
-// const Experimental = document.getElementById("Experimental");
-// Experimental.addEventListener("click", () => {
-//   input = document.getElementById("search-input2");
-//   alert("ok");
-//    input.value="car";
-//    //gallery.innerHTML="";
-//  // searchParam="food";
-//   // searchImages();
-//    console.log()
-//     // document.getElementById("main-form").submit();
-// });
+// ------------default search-----------
+const input = document.getElementById("search-input2");
 
+const Experimental = document.getElementById("Experimental");
+Experimental.addEventListener("click", () => {
+
+  // alert("ok");
+  input.value="experimental";
+  console.log()
+});
+
+const D3_render = document.getElementById("3D-Renders");
+D3_render.addEventListener("click", () =>{
+  input.value="3d renders";
+})
+
+const Nature = document.getElementById("Nature");
+Nature.addEventListener("click", () =>{
+  input.value="Nature";
+})
+
+const food = document.getElementById("Food-Drink");
+food.addEventListener("click", () =>{
+  input.value="food";
+})
+
+const anime = document.getElementById("anime");
+anime.addEventListener("click", () =>{
+  input.value="anime";
+})
+
+const love = document.getElementById("love");
+love.addEventListener("click", () =>{
+  input.value="love";
+})
+
+const cars = document.getElementById("cars");
+cars.addEventListener("click", () =>{
+  input.value="cars";
+})
+
+const marvel = document.getElementById("marvel");
+marvel.addEventListener("click", () =>{
+  input.value="marvel";
+})
 
 
 

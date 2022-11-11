@@ -17,7 +17,7 @@
       <div class="left-content">
         <h1>Photos for everyone</h1>
         <p>Over 3 million free high-resolution images brought to you by the world’s most generous community of photographers.</p>
-        <button>Start Browsing</button>
+        <button id="start-browsing">Start Browsing</button>
       </div>
     </div>
     <div class="part-right">
@@ -28,12 +28,12 @@
     </div>
   </div>
   <!-- -----------------login page------------- -->
-  <div class="content ">
+  <div class="content hide-item">
     <div class="cls-btn">
       <i class="fa-solid fa-rectangle-xmark"></i>
     </div>
     <h1>Login Here</h1>
-    <form name="loginForm" action="website.html" onsubmit="return submitForm()">
+    <form name="loginForm" action="website.html" onsubmit="return submitForm()" >
       <div class="field">
         <span class="fa fa-user"></span>
         <input name="EmailId" type="text" placeholder="Enter Email Id"  onfocus="onFocusEmail()" onblur="onBlurEmail()" autofocus/>
@@ -71,12 +71,13 @@
     </div>
     <div class="signup">
       Don't have account?
-      <a href="signup.html">Signup Now</a>
+      <a href="#" id="signup-anchor">Signup Now</a>
     </div>
   </div>
 
+  <!-- ------------------------------------------------------------------------------ -->
   <!-- ---------------------signup page------------------ -->
-  <form style="display: none;" class="main-div-signup" action="signIn.html" target="_blank" name="signupForm" onsubmit="return submitSignUpForm()">
+  <form  class="main-div-signup hide-item" action="#"  name="signupForm" onsubmit="return submitSignUpForm()">
     <table align="center" cellpadding="5"   cellspacing="5">
       <!-- -------first name------ -->
       <tr>
@@ -212,4 +213,6 @@
     </div>
   </form>
 </body>
+<script src="index.js"></script>
+<script src="index-signup.js"></script>
 </html>

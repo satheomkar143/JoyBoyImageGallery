@@ -1,5 +1,5 @@
 .gallery {
-  background-color: rgb(18, 21, 20);
+  background-color: rgb(55, 198, 195);
   width: 100%;
   min-height: 100vh;
   columns: 4;
@@ -16,6 +16,11 @@
   background-color: rgb(26, 193, 212);
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.8);
 }
+.gallery .gallery-img:hover{
+  width: 102%;
+  height: 102%;
+  transform: rotate(15deg);
+}
 .img-popup-window {
   position: fixed;
   z-index: 100;
@@ -24,7 +29,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80vh;
-  background-color: rgb(132, 194, 173);
+  background: linear-gradient(to right, rgba(181, 83, 208, 0.8), rgba(37, 228, 66, 0.8));
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   transition: 0.5s;
@@ -40,23 +45,49 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
+  /* width: 20px; */
+  /* height: 20px; */
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  background: transparent;
+  color: rgba(208, 255, 0, 0.871);
+}
+.close-btn:hover{
+  font-size: 1.8rem;
+}
+.download-btn {
+  /* text-transform: capitalize; */
+  /* padding: 10px 20px; */
+  /* background: yellow; */
+  color: rgb(113, 7, 126);
+  /* text-decoration: none; */
+  /* border-radius: 5px; */
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 2rem;
+}
+.download-btn:hover{
+  font-size: 1.8rem;
+}
+.like-btn{
+  color: rgb(59, 52, 60);
+  position: absolute;
+  right: 80px;
+  top: 10px;
+  font-size: 2rem;
+  background: transparent;
   border: none;
   cursor: pointer;
 }
-.download-btn {
-  text-transform: capitalize;
-  padding: 10px 20px;
-  background: yellow;
-  color: blue;
-  text-decoration: none;
-  border-radius: 5px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
+.like-btn:hover{
+  font-size: 1.8rem;
+}
+.get-like{
+  color: rgb(205, 12, 44) !important;
 }
 .large-img {
   height: 80%;
@@ -64,6 +95,11 @@
   max-width: 80%;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 7px 7px 10px rgb(26, 4, 27);
+}
+.large-img:hover{
+  height: 82%;
+  cursor: pointer;
 }
 .controls {
   background: none;
@@ -72,6 +108,11 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+.controls:hover{
+  font-size: 1.8rem;
 }
 .pre-btn {
   left: 20px;
