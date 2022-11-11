@@ -103,6 +103,7 @@ header .search .logo span {
   text-shadow: 3px 3px 5px rgb(236, 10, 48);
   /* background-color: red; */
 }
+
 header .side-menu {
   /* background-color: red; */
   display: flex;
@@ -287,3 +288,39 @@ header .side-menu .menu #marvel {
 }
 
 
+/* -------------------------------welcome page-------------------------- */
+.hide-item{
+  display: none !important;
+}
+.welcome{
+  width: 50vw;
+  height: 30vh;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* background: linear-gradient(320deg, rgba(215, 119, 119, 0.8), rgba(18, 164, 193, 0.8)); */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+.welcome h1{
+  margin-bottom: 15px;
+}
+.welcome i{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgba(56, 51, 51, 0.701);
+}
+.welcome i:hover{
+  font-size: 1.8rem;
+  color: #02112f;
+}

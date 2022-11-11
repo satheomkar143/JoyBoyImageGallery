@@ -20,7 +20,7 @@ font-family: 'Xanh Mono', monospace; */
   font-family: 'Ubuntu', sans-serif;
 }
 .hide-item{
-  display: none;
+  display: none !important;
 }
 
 body {

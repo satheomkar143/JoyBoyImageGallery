@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Ubuntu&family=Xanh+Mono&display=swap');
 
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
-}
+} */
 :root{
-  --clr: #222327;
+  --clr: #51044d;
 }
 /* body{
   display: flex;
@@ -18,15 +18,17 @@
   background: var(--clr);
 } */
 .navigation{
-  margin-top: 100px;
-  position: relative;
+  position: fixed;
+  top: 40px;
+  right: 20px;
   width: 400px;
   height: 70px;
-  background: #fff;
+  background: rgba(158, 187, 142, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
 }
 .navigation ul{
   display: flex;
@@ -61,12 +63,12 @@
   color: var(--clr);
 }
 .navigation ul li.active a .icon{
-  transform: translateY(-32px);
+  transform: translateY(-37px);
 }
 .navigation ul li a .text{
   position: absolute;
   color: var(--clr);
-  font-weight: 400;
+  font-weight: 800;
   font-size: 0.75em;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -78,17 +80,17 @@
   transform: translateY(10px);
 }
 .indicator{
-  background: #29fd53;
+  background: #2fdcae;
   position: absolute;
-  top: -50%;
-  left: 8.5%;
-  height: 70px  ;
-  width: 70px;
+  top: -40%;
+  left: 11%;
+  height: 50px  ;
+  width: 50px;
   border-radius: 50%;
-  border: 6px solid var(--clr);
+  border: 6px solid transparent;
   transition: 0.5s;
 }
-.indicator::before{
+/* .indicator::before{
   content: '';
   position: absolute;
   top: 50%;
@@ -97,7 +99,7 @@
   height: 20px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
+  box-shadow: 1px -10px 0 0 transparent;
 }
 .indicator::after{
   content: '';
@@ -109,7 +111,7 @@
   background: transparent;
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 var(--clr);
-}
+} */
 .navigation ul li:nth-child(1).active ~ .indicator{
   transform: translateX(calc(80px*0));
 } 
