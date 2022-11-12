@@ -87,7 +87,7 @@
   font-size: 1.8rem;
 }
 .get-like{
-  color: rgb(205, 12, 44) !important;
+  color: rgb(205, 12, 44) ;
 }
 .large-img {
   height: 80%;
@@ -98,7 +98,7 @@
   box-shadow: 7px 7px 10px rgb(26, 4, 27);
 }
 .large-img:hover{
-  height: 82%;
+  height: 100%;
   cursor: pointer;
 }
 .controls {

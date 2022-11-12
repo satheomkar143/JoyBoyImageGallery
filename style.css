@@ -254,6 +254,10 @@ header .side-menu .menu #marvel {
   font-size: 1.2rem;
   font-family: 'Ubuntu', sans-serif;
 }
+.term-cond ul li a:hover, #join-team:hover{
+  font-size: 1.3rem;
+  color: yellow;
+}
 .term-cond > *{
   width: 30%;
   /* background-color: red; */
@@ -261,9 +265,10 @@ header .side-menu .menu #marvel {
 .term-cond .div1 ul{
   display: flex;
   list-style-type: none;
+  /* background-color: aqua; */
 }
 .term-cond .div1 ul :nth-child(1){
-  margin-right: 30px;
+  margin-right: 15px;
 }
 .term-cond .div2{
   text-align: center;

@@ -121,11 +121,15 @@
   list-style: none;
   /* background-color: red; */
 }
-.about-div .contact-details .followUS ul li{
+.about-div .contact-details .followUS ul li a{
   font-size: 2rem;
   /* background-color: aquamarine; */
   margin: 0 20px;
-  color: rgb(220, 230, 31);
+  color: rgb(220, 230, 31) !important;
+}
+.about-div .contact-details .followUS ul li a:hover{
+  font-size: 1.9rem;
+  color: rgb(138, 153, 9) !important;
 }
 /* .about-div .form-img img{
   width: 250px;
@@ -197,4 +201,9 @@
   background: rgba(179, 75, 154, 0.818);
   color: rgba(4, 36, 86, 0.8);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.about-div .contact-form form button:hover{
+  font-size: 1.4rem;
+  background: rgba(179, 75, 154, 1);
 }

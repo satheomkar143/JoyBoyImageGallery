@@ -47,6 +47,7 @@ const makeImages = (data) => {
       currentImage = index;
       showPopup(item);
     });
+
   });
 };
 
@@ -55,6 +56,8 @@ const showPopup = (item) => {
   const downloadBtn = document.querySelector(".download-btn");
   const closeBtn = document.querySelector(".close-btn");
   const image = document.querySelector(".large-img");
+  
+ 
 
   popup.classList.remove("hidden");
   downloadBtn.href = item.links.html;
@@ -63,15 +66,27 @@ const showPopup = (item) => {
   closeBtn.addEventListener("click", () => {
     popup.classList.add("hidden");
   });
-};
 
+};
+const likeBtn = document.querySelector(".like-btn");
 const preBtn = document.querySelector(".pre-btn");
 const nextBtn = document.querySelector(".next-btn");
+
+likeBtn.addEventListener("click", () => {
+  if(likeBtn.classList.contains("get-like")){
+    likeBtn.classList.remove("get-like");
+  }else{
+    likeBtn.classList.add("get-like");
+  }
+});
 
 preBtn.addEventListener("click", () => {
   if (currentImage > 0) {
     currentImage--;
     showPopup(allImages[currentImage]);
+    if(likeBtn.classList.contains("get-like")){
+      likeBtn.classList.remove("get-like");
+    }
   }
 });
 
@@ -79,6 +94,9 @@ nextBtn.addEventListener("click", () => {
   if (currentImage < allImages.length - 1) {
     currentImage++;
     showPopup(allImages[currentImage]);
+    if(likeBtn.classList.contains("get-like")){
+      likeBtn.classList.remove("get-like");
+    }
   }
 });
 

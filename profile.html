@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="navbar.css">
+  <title>JoyBoy | Profile</title>
+</head>
+<body>
+  <!-- -------------navbar start----------- -->
+  <div class="navigation">
+    <ul>
+      <li class="list">
+        <a href="website.html">
+          <span class="icon"><i class="fa-solid fa-house-user"></i></span>
+          <span class="text">Home</span>
+        </a>
+      </li>  
+      <li class="list">
+        <a href="about.html">
+          <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+          <span class="text">About Us</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="contact.html">
+          <span class="icon"><i class="fa-solid fa-square-phone"></i></span>
+          <span class="text">Contact Me</span>
+        </a>
+      </li>
+      <li class="list active">
+        <a href="profile.html">
+          <span class="icon"><i class="fa-solid fa-user-tie"></i></span>
+          <span class="text">Profile</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="index.html">
+          <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+          <span class="text">Logout</span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
+  <!-- ------------navbar end------------------- -->
+  <div class="main-div">
+    <div class="profile">
+      <div class="left-part">
+        <div class="profile-div">
+          <div class="user-photo">
+            <div class="photo">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="user-edit">
+              <h1>omkar</h1>
+              <div>
+                <button class="save-info hide-info">save</button>
+                <button class="edit-info">Edit profile</button>
+              </div>
+            </div>
+          </div>
+          <!-- -----------------display info-------------- -->
+          <div class="info display-info">
+            <div class="info-div">
+              <i class="fa-solid fa-user"></i>
+              <h3 class="first-name">omkar</h3></div>
+            <div class="info-div">
+              <i class="fa-solid fa-user"></i>
+              <h3 class="last-name">sathe</h3>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-envelope"></i>
+              <h3 class="email">satheomkar143@gmail.com</h3>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-key"></i>
+              <h3 class="password">password</h3>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-mobile-retro"></i>
+              <h3 class="mobile">7058919412</h3>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-cake-candles"></i>
+              <h3 class="birthdate">24/12/1997</h3>
+            </div>
+          </div>
+          <!-- -----------------------editable info----------------- -->
+          <div class="info edit-Info hide-info">
+            <div class="info-div">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" class="first-name" autofocus placeholder="first name"></input></div>
+            <div class="info-div">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" class="last-name" placeholder="last name"></input>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-envelope"></i>
+              <h3 class="email">satheomkar143@gmail.com</h3>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-key"></i>
+              <input type="text" class="password" placeholder="password"></input>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-mobile-retro"></i>
+              <input type="text" class="mobile" placeholder="mobile"></input>
+            </div>
+            <div class="info-div">
+              <i class="fa-solid fa-cake-candles"></i>
+              <input type="text" class="birthdate" placeholder="birth date"></input>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-part"></div>
+    </div>
+  </div>
+</body>
+<script src="navbar.js"></script>
+<script src="profile.js"></script>
+</html>

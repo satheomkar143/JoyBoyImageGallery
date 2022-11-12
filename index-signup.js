@@ -17,11 +17,11 @@ const mobileRegex = "(^[6-9]{1,1})+([0-9]{9,9})$";
 //---------  add remove check box------
 function rightCheck(check) {
   check.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-  check.style.color = "rgb(95, 99, 6)";
+  check.style.color = "rgba(255, 255, 0, 0.75)";
 }
 function crossCheck(check) {
   check.innerHTML = "<i class='fa-solid fa-circle-xmark'></i>";
-  check.style.color = "rgb(57, 4, 7)";
+  check.style.color = "red";
 }
 
 // ---------------onblur and onfocus for first name------------

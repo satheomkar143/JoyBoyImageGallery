@@ -41,10 +41,24 @@
 }
 .about-div .about-img .img1{
   margin-left: 50px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.about-div .about-img .img1:hover{
+  margin-left: 50px;
+  width: 80%;
 }
 .about-div .about-img .img2{
   margin-top: 80px;
   margin-left: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.about-div .about-img .img2:hover{
+  margin-top: 50px;
+  rotate: 90deg;
+  width: 80%;
+  /* margin-left: 10px; */
 }
 .about-div .about-text{
   width: 40%;
