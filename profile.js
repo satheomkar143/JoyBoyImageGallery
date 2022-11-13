@@ -13,6 +13,8 @@ saveBtn.addEventListener("click", () => {
   displayDiv.classList.remove("hide-info");
   editDiv.classList.add("hide-info");
   saveBtn.classList.add("hide-info");
+  updateUserData();
+  setUserData();
 });
 
 // ---------------------------set user card data------------------------------
@@ -22,13 +24,12 @@ let userCredential = JSON.parse(localStorage.getItem("userCredential"));
 let userNumber;
 
 let findUserId =
-formData.length &&
-JSON.parse(localStorage.getItem("formData")).some(
-    (data,index) =>
-        {if(data.email == userCredential[0].email){
-          userNumber=index;
-        }}
-);
+  formData.length &&
+  JSON.parse(localStorage.getItem("formData")).some((data, index) => {
+    if (data.email == userCredential[0].email) {
+      userNumber = index;
+    }
+  });
 
 const firstName = document.querySelector(".first-name-disp");
 const LastName = document.querySelector(".last-name-disp");
@@ -37,36 +38,61 @@ const password = document.querySelector(".password-disp");
 const mobile = document.querySelector(".mobile-disp");
 const birthDate = document.querySelector(".birthdate-disp");
 
-// --------------set user data------------
+const firstNameEdit = document.querySelector(".first-name");
+const LastNameEdit = document.querySelector(".last-name");
+const emailEdit = document.querySelector(".email");
+const passwordEdit = document.querySelector(".password");
+const mobileEdit = document.querySelector(".mobile");
+const birthDateEdit = document.querySelector(".birthdate");
 
-const userName  = document.querySelector(".user-name");
-userName.innerHTML = formData[userNumber].fname;
-
+const userName = document.querySelector(".user-name");
 const photo = document.querySelector(".photo");
 
-if(formData[userNumber].gender == 'Male'){
-  photo.innerHTML =  `<i class="fa-solid fa-user-tie"></i>`
-}else{
-  photo.innerHTML = `<i class="fa-solid fa-user"></i>`
+// --------------set user data------------
+
+function setUserData(){
+  userName.innerHTML = formData[userNumber].fname;
+  
+  if (formData[userNumber].gender == "Male") {
+    photo.innerHTML = `<i class="fa-solid fa-user-tie"></i>`;
+  } else {
+    photo.innerHTML = `<i class="fa-solid fa-user"></i>`;
+  }
+  
+  firstName.innerHTML = formData[userNumber].fname;
+  LastName.innerHTML = formData[userNumber].lname;
+  email.innerHTML = formData[userNumber].email;
+  password.innerHTML = formData[userNumber].pwd;
+  mobile.innerHTML = formData[userNumber].mobile;
+  birthDate.innerHTML = formData[userNumber].birthDate;
+
+  // -----------------------------push data in update section----
+
+  firstNameEdit.value = formData[userNumber].fname;
+  LastNameEdit.value = formData[userNumber].lname;
+  emailEdit.innerHTML = formData[userNumber].email;
+  passwordEdit.value = formData[userNumber].pwd;
+  mobileEdit.value = formData[userNumber].mobile;
+  birthDateEdit.value = formData[userNumber].birthDate;
 }
 
-firstName.innerHTML = formData[userNumber].fname;
-LastName.innerHTML = formData[userNumber].lname;
-email.innerHTML = formData[userNumber].email;
-password.innerHTML = formData[userNumber].pwd;
-mobile.innerHTML = formData[userNumber].mobile;
-birthDate.innerHTML = formData[userNumber].birthDate;
+setUserData();
 
 // --------------set user data end------------
 
+// ---------------update user data---------------
 
 
+function updateUserData(){
+  formData[userNumber].fname = firstNameEdit.value;
+  formData[userNumber].lname = LastNameEdit.value;
+  // formData[userNumber].email = emailEdit.value;
+  formData[userNumber].pwd = passwordEdit.value;
+  formData[userNumber].mobile = mobileEdit.value;
+  formData[userNumber].birthDate = birthDateEdit.value;
 
-
-
-
-
-
+  localStorage.setItem("formData", JSON.stringify(formData));
+}
 
 
 // -------------------------------------------------
@@ -89,15 +115,13 @@ const getImages = () => {
 };
 
 const makeImages = (data) => {
+  // console.log(data);
 
-    // console.log(data);
-
-    let img = document.createElement("img");
-    img.src = data.urls.regular;
-    img.className = "large-img";
-    carasol.innerHTML = "";
-    carasol.appendChild(img);
-
+  let img = document.createElement("img");
+  img.src = data.urls.regular;
+  img.className = "large-img";
+  carasol.innerHTML = "";
+  carasol.appendChild(img);
 };
 
 function update() {

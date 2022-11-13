@@ -144,6 +144,9 @@ body{
   font-size: 1.2rem;
   color: rgba(68, 255, 0,0.8);
 }
+.profile .left-part .profile-div .info .info-div input{
+  color: rgb(32, 223, 217);
+}
 .profile .right-part{
   width: 60%;
   height: 100%;
