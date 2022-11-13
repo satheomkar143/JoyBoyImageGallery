@@ -257,6 +257,7 @@ header .side-menu .menu #marvel {
 .term-cond ul li a:hover, #join-team:hover{
   font-size: 1.3rem;
   color: yellow;
+  cursor: pointer;
 }
 .term-cond > *{
   width: 30%;
@@ -266,12 +267,16 @@ header .side-menu .menu #marvel {
   display: flex;
   list-style-type: none;
   /* background-color: aqua; */
+  color: rgb(93, 25, 156);
 }
 .term-cond .div1 ul :nth-child(1){
   margin-right: 15px;
 }
 .term-cond .div2{
   text-align: center;
+}
+.term-cond .div2 a{
+  color:rgb(93, 25, 156);
 }
 .term-cond .div2 > *{
   margin: 10px;

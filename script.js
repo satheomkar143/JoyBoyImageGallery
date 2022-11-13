@@ -166,3 +166,27 @@ marvel.addEventListener("click", () =>{
   input.value="marvel";
 })
 
+// -----------------close bottom popup menu------------------
+const privacyPolicy = document.querySelector(".privacyPolicy");
+const privacyClose = document.querySelector(".privacy-close");
+const privacyLi = document.querySelector(".privacyLi");
+
+privacyLi.addEventListener("click", () =>{
+  privacyPolicy.classList.remove("hide-bottom");
+})
+
+privacyClose.addEventListener("click", () =>{
+  privacyPolicy.classList.add("hide-bottom");
+})
+
+const termCondition = document.querySelector(".termCondition");
+const termsClose = document.querySelector(".terms-close");
+const termsLi = document.querySelector(".termsLi");
+
+termsLi.addEventListener("click", () =>{
+  termCondition.classList.remove("hide-bottom");
+})
+
+termsClose.addEventListener("click", () =>{
+  termCondition.classList.add("hide-bottom");
+})

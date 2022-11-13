@@ -15,6 +15,60 @@ saveBtn.addEventListener("click", () => {
   saveBtn.classList.add("hide-info");
 });
 
+// ---------------------------set user card data------------------------------
+
+let formData = JSON.parse(localStorage.getItem("formData"));
+let userCredential = JSON.parse(localStorage.getItem("userCredential"));
+let userNumber;
+
+let findUserId =
+formData.length &&
+JSON.parse(localStorage.getItem("formData")).some(
+    (data,index) =>
+        {if(data.email == userCredential[0].email){
+          userNumber=index;
+        }}
+);
+
+const firstName = document.querySelector(".first-name-disp");
+const LastName = document.querySelector(".last-name-disp");
+const email = document.querySelector(".email-disp");
+const password = document.querySelector(".password-disp");
+const mobile = document.querySelector(".mobile-disp");
+const birthDate = document.querySelector(".birthdate-disp");
+
+// --------------set user data------------
+
+const userName  = document.querySelector(".user-name");
+userName.innerHTML = formData[userNumber].fname;
+
+const photo = document.querySelector(".photo");
+
+if(formData[userNumber].gender == 'Male'){
+  photo.innerHTML =  `<i class="fa-solid fa-user-tie"></i>`
+}else{
+  photo.innerHTML = `<i class="fa-solid fa-user"></i>`
+}
+
+firstName.innerHTML = formData[userNumber].fname;
+LastName.innerHTML = formData[userNumber].lname;
+email.innerHTML = formData[userNumber].email;
+password.innerHTML = formData[userNumber].pwd;
+mobile.innerHTML = formData[userNumber].mobile;
+birthDate.innerHTML = formData[userNumber].birthDate;
+
+// --------------set user data end------------
+
+
+
+
+
+
+
+
+
+
+
 // -------------------------------------------------
 // ----------------carousel----------------
 const access_key = "rNVwC0_oge_yeUsY4qrMIPsRztIj8yTVI-sezUu4LxM";

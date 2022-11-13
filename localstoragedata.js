@@ -58,7 +58,22 @@ function signIn(e) {
     const formSign = document.querySelector(".content");
     formSign.classList.add("hide-item");
   } else {
+    userId();
     location.href = "website.html";
   }
   e.preventDefault();
+}
+
+
+// -------------------------store sign in user email and password--------------
+
+function userId(){
+  let email = loginForm.EmailId.value,
+    pwd = loginForm.password.value;
+  
+    let userCredential = [];
+
+    userCredential.push({email, pwd});
+    localStorage.setItem("userCredential", JSON.stringify(userCredential));
+    console.log("user data fetched successfully")
 }
