@@ -207,3 +207,29 @@
   font-size: 1.4rem;
   background: rgba(179, 75, 154, 1);
 }
+/* ----------submit----------- */
+.submit{
+  /* background-color: red; */
+  background: rgba(255, 255, 255, 0.541);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 5px 10px;
+  width: 28%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 3px black;
+}
+.submit i{
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.submit i:hover{
+  font-size: 1.2rem;
+  color: rgb(82, 63, 63);
+}
+.hide-item{
+  display: none;
+}

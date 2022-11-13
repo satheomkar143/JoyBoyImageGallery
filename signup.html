@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="websiteIcon.png" type="image/x-icon">
   <link rel="stylesheet" href="signUp.css">
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-  <title>Sign Up</title>
+  <title>JoyBoy | Sign Up</title>
 </head>
 <body>
   <form class="main-div" action="index.html" name="signupForm" onsubmit="return submitSignUpForm()">
@@ -100,10 +101,10 @@
         <td>
           <div class="div-gender">
             <div>
-              <input type="radio" name="Gender" id="Male"><span for="Male"> Male</span>
+              <input type="radio" name="Gender" id="Male" value="Male"><span for="Male"> Male</span>
             </div>
             <div>
-              <input type="radio" name="Gender" id="Female"><span for="Female"> Female</span>
+              <input type="radio" name="Gender" id="Female" value="Female"><span for="Female"> Female</span>
             </div>
           </div>
         </td>
@@ -154,10 +155,18 @@
   </form>
     <!-- ----------------------welcome massage------------ -->
  <div class="welcome hide-item">
-  <h1>Hi Omkar. Sign up successful.</h1>
+  <h1 class="welcome-h1">Hi Omkar. Sign up successful.</h1>
   <h3>Login to Reach the world's awesome photography.</h3>
   <i class="fa-solid fa-arrow-right-to-bracket" id="welcomeClose"></i>
  </div>
+
+    <!-- ----------------------duplicate account massage------------ -->
+ <div class="duplicate hide-item">
+  <h1 class="duplicate-h1">Ooopppssss... Duplicate found!!!</h1>
+  <h3>This Email id is already registered with us.</h3>
+  <i class="fa-solid fa-arrow-right-to-bracket" id="duplicateClose"></i>
+ </div>
 </body>
 <script src="index-signup.js"></script>
+<script src="localstoragedata.js"></script>
 </html>

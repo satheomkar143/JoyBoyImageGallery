@@ -66,7 +66,7 @@ body {
   color: white;
 }
 .left-content h1{
-  position: re;
+  position: relative;
   margin: 0;
   font-size: 3rem;
   opacity: 0.8;
@@ -111,6 +111,8 @@ body {
   columns: 2;
   column-gap: 20px;
   padding: 20px;
+
+  
   /* display: flex;
   flex-wrap: wrap; */
 }
@@ -289,3 +291,45 @@ i span{
   text-decoration: underline;
   color: yellow;
 }
+
+
+
+
+/* -------------------------------credential page-------------------------- */
+
+.credential{
+  width: 50vw;
+  height: 30vh;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  color: white;
+  /* background: rgba(0,255,255,0.6); */
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+.credential h1, .credential h3{
+  margin-bottom: 15px;
+}
+.credential i{
+  /* position: absolute;
+  top: 10px;
+  right: 20px; */
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgba(75, 207, 42, 0.701);
+}
+.credential i:hover{
+  font-size: 1.8rem;
+  color: #478a33;
+}
+
+

@@ -387,8 +387,11 @@ function submitSignUpForm() {
             if (onBlurMobile()) {
               if (onBlurBirth()) {
                 if (checkGender()) {
-                  const popupDiv = document.getElementById("CreateAccBtn");
-                  popupDiv.addEventListener("click", funPopup);
+                  // const popupDiv = document.getElementById("CreateAccBtn");
+                  // popupDiv.addEventListener("click", funPopup);
+                  const changeName= document.querySelector(".welcome-h1");
+                  changeName.innerHTML=`Hi ${signupForm.FirstName.value}. Sign up successful.`
+                  signUp(event);
                   console.log("form successfull")
                   return true;
                 } else {
@@ -435,6 +438,14 @@ function funPopup(){
   welcomePopup.classList.remove("hide-item");
 }
 
+function duplicateEmail(){
+  const signUp_Form = document.querySelector(".main-div");
+  signUp_Form.classList.add("hide-item");
+
+  const duplicate = document.querySelector(".duplicate");
+  duplicate.classList.remove("hide-item");
+}
+
 
 // --------------close welcome popup page after click on close button----------
 // const welcomeClsBtn = document.getElementById("welcomeClose");
@@ -449,3 +460,13 @@ welcomeClsBtn.addEventListener("click", () =>{
   document.querySelector(".main-div").submit();
 })
 
+
+// ----------show signup form after click on duplicate email btn--------
+const duplicateClose = document.getElementById("duplicateClose");
+duplicateClose.addEventListener("click", () =>{
+  const signUp_Form = document.querySelector(".main-div");
+  signUp_Form.classList.remove("hide-item");
+
+  const duplicate = document.querySelector(".duplicate");
+  duplicate.classList.add("hide-item");
+})

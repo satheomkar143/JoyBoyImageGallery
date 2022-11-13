@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="websiteIcon.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="navbar.css">
     <title>Contact Us</title>
+    
   </head>
   <body>
       <!-- -------------navbar start----------- -->
@@ -101,7 +103,7 @@
           </div>
           <!-- <div class="form-img"><img src="food1.jpg" alt=""></div> -->
           <div class="contact-form">
-            <form action="">
+            <form onsubmit="fun()" name="form" action="contact.html">
               <div class="thank-you">
                 thank you for your interest. To contact me, use the form below
                 or simply give me a call.
@@ -128,6 +130,12 @@
         </div>
       </div>
     </div>
+    <!-- -------------submit popup---------- -->
+    <div class="submit hide-item">
+      <h2>form Submitted Successfully</h2>
+      <i id="submitBtn" class="fa-solid fa-circle-xmark"></i>
+    </div>
   </body>
   <script src="navbar.js"></script>
+  <script src="contact.js"></script>
 </html>

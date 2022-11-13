@@ -16,9 +16,9 @@ saveBtn.addEventListener("click", () => {
 });
 
 // -------------------------------------------------
-// ----------------carasol----------------
+// ----------------carousel----------------
 const access_key = "rNVwC0_oge_yeUsY4qrMIPsRztIj8yTVI-sezUu4LxM";
-const random_photo_URL = `https://api.unsplash.com/photos/random?client_id=${access_key}&count=10`;
+const random_photo_URL = `https://api.unsplash.com/photos/random?client_id=${access_key}&count=20`;
 
 let currentImage = 0;
 const carasol = document.querySelector(".img-carasol");

@@ -94,6 +94,7 @@ function submitForm() {
       // loginForm.password.value="";
       // loginForm.EmailId.value = "";
       // form.classList.add("hide-item");
+      signIn(event);
       return true;
     } else {
       console.log("not password");
@@ -130,6 +131,14 @@ signup_form.addEventListener("click", () =>{
   // const form2 = document.querySelector(".main-div-signup");
   // form2.classList.remove("hide-item");
 })
+
+// ------------------hide credential form after click on  btn-------------
+const credClose = document.querySelector("#credClose");
+credClose.addEventListener("click", () => {
+  const form = document.querySelector(".credential");
+  form.classList.add("hide-item");
+});
+
 
 
 
