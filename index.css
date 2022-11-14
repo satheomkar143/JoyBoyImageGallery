@@ -40,6 +40,8 @@ body {
   background-size: cover;
   display: flex;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 .part-left {
   /* background: red; */
@@ -107,7 +109,7 @@ body {
   /* max-width: 40%; */
   width: 40%;
   /* height: 100%; */
-  min-height: 100%;
+  min-height: 50%;
   columns: 2;
   column-gap: 20px;
   padding: 20px;

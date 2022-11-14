@@ -89,7 +89,7 @@
     width: 100%;
   }
 }
-@media (max-width:950px){
+@media (max-width:790px){
   header .side-menu .menu #Food-Drink{
     display: none;
   }
@@ -172,5 +172,50 @@
   .main-div .dialouge div {
     font-size: 1rem;
     margin-bottom: 0.1rem;
+  }
+}
+@media (max-width:470px){
+  .gallery {
+    columns: 1;
+  }
+  .term-cond {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .term-cond > *{
+    width: 80%;
+  }
+  .term-cond .div2 img{
+    display: none;
+  }
+  .term-cond .div3 ul{
+    justify-content: center;
+    margin: 5px !important;
+  }
+  header .side-menu .input-search #about, #contact, #profile, #logout{
+    display: none;
+  }
+  header .side-menu .input-search .search-div {
+    width: 90%;
+    height: 200%;
+    margin-right: 0px;
+    margin-left: 5%;
+  }
+}
+@media (max-width:470px){
+  header .side-menu .input-search #search-btn {
+    display: none;
+  }
+  header .side-menu .input-search .search-div input{
+    margin-top: 10px;
+    height: 70%;
+  }
+  .smallDropMenu{
+    opacity: 1;
+  }
+  .smallDiv{
+    opacity: 1;
   }
 }

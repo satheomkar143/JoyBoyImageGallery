@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Henny+Penny&family=Island+Moments&family=Kolker+Brush&family=Merienda+One&family=Monoton&family=Poppins:wght@200;400;600&family=Rubik+Burned&family=Ubuntu&family=Xanh+Mono&display=swap');
 
+html{
+  font-size: 10px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -24,6 +27,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-top: 60px;
 }
 .about-div .about-img{
   /* background-color: red; */
@@ -31,6 +35,8 @@
   height: 100%;
   display: flex;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-div .about-img .img-div{
@@ -40,7 +46,7 @@
   box-shadow: 10px 10px 10px rgb(23, 22, 22);
 }
 .about-div .about-img .img1{
-  margin-left: 50px;
+  /* margin-left: 20%; */
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -49,8 +55,8 @@
   width: 80%;
 }
 .about-div .about-img .img2{
-  margin-top: 80px;
-  margin-left: 50px;
+  /* margin-top: 80px; */
+  /* margin-left: 50px; */
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -63,33 +69,36 @@
 .about-div .about-text{
   width: 40%;
   /* background-color: yellow; */
-  height: 100%;
+  height: 90%;
   display: flex;
   /* align-items: center; */
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  padding-right: 30px;
+  /* overflow: auto; */
+
 }
 .about-div .about-text *{
-  margin: 20px;
+  margin: 2rem;
   font-family: 'Ubuntu', sans-serif;
 }
 .about-div .about-text h1{
   font-family: 'Xanh Mono', monospace; 
-  font-size: 2.5rem;
+  font-size: 4.2rem;
   font-weight: bolder;
   color: white;
   text-shadow: 3px 3px 3px rgba(81, 66, 196, 0.8);
 }
 .about-div .about-text h2{
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: rgba(237, 209, 209, 0.8);
 }
 .about-div .about-text h3{
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   color: rgba(246, 224, 224,0.5);
 }
 .about-div .about-text p{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

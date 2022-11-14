@@ -1,7 +1,49 @@
+@media (max-width:1120px){
+  .welcome{
+    width: 70vw;
+  }
+  .welcome h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .welcome h3{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .welcome i{
+    font-size: 1.3rem;
+  }
+  .welcome i:hover{
+    font-size: 1.2rem;
+  }
+  .duplicate{
+    width: 70vw;
+  }
+
+}
+@media (max-width:700px){
+  .duplicate h1{
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width:450px){
   .main-div{
     width: 300px;
+    padding: 5px 5px;
   }
-
+  table{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .duplicate h1{
+    font-size: 1.2rem;
+  }
+  .duplicate i{
+    font-size: 1.2rem;
+  }
+  .duplicate i:hover{
+    font-size: 1.3rem;
+  }
 }
 

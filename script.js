@@ -190,3 +190,18 @@ termsLi.addEventListener("click", () =>{
 termsClose.addEventListener("click", () =>{
   termCondition.classList.add("hide-bottom");
 })
+
+const smallDropMenu = document.querySelector(".smallDropMenu");
+const smallDiv = document.querySelector(".smallDiv");
+smallDropMenu.addEventListener("click", ()=>{
+  smallDiv.classList.toggle("hide-bottom");
+  if(smallDropMenu.classList.contains("false")){
+    smallDropMenu.classList.add("true");
+    smallDropMenu.classList.remove("false");
+    smallDropMenu.innerHTML = `<i class="fa-solid fa-circle-xmark"></i>`;
+  } else if(smallDropMenu.classList.contains("true")){
+    smallDropMenu.classList.add("false");
+    smallDropMenu.classList.remove("true");
+    smallDropMenu.innerHTML = `<i class="fa-solid fa-list"></i>`;
+  }
+})
