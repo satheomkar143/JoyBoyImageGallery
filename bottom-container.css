@@ -17,6 +17,7 @@
   font-family: 'Ubuntu', sans-serif;
   border-radius: 20PX;
   box-shadow: 0 0 15px black;
+  z-index: 60;
 }
 .bottom-container i{
   position:absolute;

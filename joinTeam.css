@@ -7,6 +7,9 @@
   user-select: none;
   font-family: 'Ubuntu', sans-serif;
 }
+html{
+  font-size: 10px;
+}
 
 body{
   height: 100vh;
@@ -15,6 +18,7 @@ body{
 }
 
 .main-div{
+  padding-top: 60px;
   max-width: 100%;
   width: 100%;
   height: 100vh;
@@ -24,14 +28,16 @@ body{
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
   /* columns: 4;
   column-gap: 20px; */
   /* padding: 40px; */
 }
 .joinTeam{
-  width: 23%;
-  min-height: 80%;
+  min-width: 20%;
+  min-height: 70%;
   background-color: rgba(0, 0, 0, 0.461);
   text-align: center;
   color: aliceblue;
@@ -42,6 +48,7 @@ body{
   padding-top: 50px;
   border: 1px solid rgba(168, 34, 195, 0.827);
   box-shadow: 0 0 5px 5px black;
+  margin: 20px ;
 }
 .joinTeam *{
   margin: 10px;
@@ -53,7 +60,7 @@ body{
 }
 
 .joinTeam h2{
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(133, 133, 246);
 }
 .joinTeam h1{
@@ -61,18 +68,21 @@ body{
   color: rgb(232, 212, 185);
 }
 .joinTeam h3{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(115, 222, 225);
 }
 .joinTeam .btn{
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: rgb(15, 91, 91);
   padding: 10px 30px;
   cursor: pointer;
   box-shadow: 4px 4px 5px black;
 }
 .joinTeam .btn:hover{
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   background-color: rgb(10, 58, 58);
 }
 
+@media (max-width:900px) {
+  
+}
