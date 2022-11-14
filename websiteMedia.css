@@ -1,0 +1,176 @@
+@media (max-width:1150px){
+  .main-div .dialouge div {
+    font-size: 1.5rem;
+  }
+  header .side-menu .input-search input {
+    font-size: 1rem;
+  }
+  header .side-menu .input-search #search-btn{
+    font-size: 1.2rem;
+  }
+  header .side-menu .input-search #search-btn:hover {
+    font-size: 1.1rem;
+  }
+  header .side-menu .input-search #clock {
+    margin-right: 10px;
+  }
+  header .side-menu .menu #marvel {
+    margin-right: 10px;
+  }
+  header .side-menu .input-search .menu-list {
+    font-size: 0.8rem;
+  }
+  header .side-menu .menu .search-tag {
+    font-size: 0.8rem;
+  }
+  .term-cond{
+    font-size: 1rem;
+  }
+  .term-cond ul li a:hover, #join-team:hover{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width:1050px){
+  header .side-menu .input-search #clock{
+    display: none;
+  }
+  header .side-menu .input-search #profile{
+    margin-right: 10px;
+  }
+  .term-cond {
+    padding: 0 20px;
+  }
+  .term-cond .div1 ul :nth-child(1){
+    margin-right: 5px;
+  }
+}
+@media (max-width:950px){
+  header .side-menu .menu #Experimental{
+    display: none;
+  }
+  .main-div .dialouge{
+    width: 70%;
+  }
+  .main-div .dialouge div {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .term-cond .div1 ul{
+    flex-direction: column;
+  }
+  .term-cond .div1 ul :nth-child(1){
+    margin-bottom: 10px;
+  }
+  header .search img{
+    width: 80px;
+  height: 90px;
+  }
+  header .search img:hover {
+    height: 100px;
+    width: 100px;
+  }
+  header .search .logo {
+    min-width: 300px;
+  }
+  .myname {
+    left: 6rem;
+  }
+  header .search .logo span {
+    width: 100px;
+    font-size: 4.5rem;
+  }
+  header .side-menu .input-search #search-btn {
+    display: none;
+  }
+  header .side-menu .input-search .search-div {
+    width: 25%;
+  }
+  header .side-menu .input-search input {
+    width: 100%;
+  }
+}
+@media (max-width:950px){
+  header .side-menu .menu #Food-Drink{
+    display: none;
+  }
+  .gallery {
+    columns: 3;
+  }
+  header .search img{
+    display: none;
+  }
+  header .search .logo{
+    margin-left: 15px;
+    min-width: 200px;
+  }
+  .myname {
+    left: 2rem;
+  }
+  .term-cond .div2 img{
+    width: 80px;
+  }
+  .term-cond .div3 ul > *{
+    margin-right: 20px;
+  }
+}
+
+@media (max-width:650px){
+  header .side-menu .menu{
+    display: none;
+  }
+  header .side-menu .input-search{
+    flex-wrap: wrap;
+  }
+  header .side-menu .input-search .search-div {
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 5%;
+  }
+  header .side-menu .input-search #search-btn {
+    display: block;
+  }
+  .term-cond{
+    font-size: 0.7rem;
+  }
+  .term-cond ul li a:hover, #join-team:hover{
+    font-size: 0.8rem;
+  }
+  .gallery {
+    columns: 2;
+  }
+  .bottom-container i{
+    font-size: 1.5rem;
+  }
+  .bottom-container i:hover{
+    font-size: 1.3rem;
+  }
+  .bottom-container .title{
+    font-size: 1.5rem;
+  }
+  .bottom-container div h2{
+    font-size: 1.3rem;
+  }
+  .bottom-container div p, .bottom-container div  ul{
+    font-size: 0.8rem;
+  }
+  
+}
+@media (max-width:530px){
+  header{
+    height: 100px;
+  } 
+  header .search .logo{
+    min-width: 150px;
+  }
+  header .search .logo span {
+    font-size: 3.5rem;
+  }
+  .myname {
+    left: 2rem;
+    font-size: 0.8rem;
+  }
+  .main-div .dialouge div {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+  }
+}
