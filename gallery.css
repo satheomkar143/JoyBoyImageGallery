@@ -1,5 +1,6 @@
 .gallery {
-  background-color: rgb(55, 198, 195);
+  /* background-color: rgb(55, 198, 195); */
+  background-color: rgb(214, 209, 209);
   width: 100%;
   min-height: 100vh;
   columns: 4;
@@ -13,13 +14,14 @@
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: rgb(26, 193, 212);
+  /* background-color: rgb(26, 193, 212); */
+  background-color: white;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.8);
 }
 .gallery .gallery-img:hover{
   width: 102%;
   height: 102%;
-  transform: rotate(15deg);
+  transform: rotate(5deg);
 }
 .img-popup-window {
   position: fixed;
@@ -29,7 +31,8 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80vh;
-  background: linear-gradient(to right, rgba(181, 83, 208, 0.8), rgba(37, 228, 66, 0.8));
+  /* background: linear-gradient(to right, rgba(181, 83, 208, 0.8), rgba(37, 228, 66, 0.8)); */
+  background: linear-gradient(to right, rgba(194, 191, 191, 0.9), rgba(191, 187, 187, 0.9));
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   transition: 0.5s;

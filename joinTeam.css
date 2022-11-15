@@ -29,7 +29,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
   flex-wrap: wrap;
   /* columns: 4;
   column-gap: 20px; */
